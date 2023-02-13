@@ -2,16 +2,40 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap');
+*{
+  font-family: 'Oswald', sans-serif;
+};
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&family=Quattrocento&display=swap');
+*{
+  font-family: 'Oswald', sans-serif;
+font-family: 'Quattrocento', serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.background-color { 
+	background: #2e94b9; 
 }
+	
+.text-color { 
+	background: #475053; 
+}
+
+.lightblue-color { 
+	background: #acdcee; 
+}
+
+.verylightblue-color { 
+	background: #f0fbff; 
+}
+.Headerdiv{
+  padding: 1rem;
+  text-align: right;
+}
+
+
+
+
 
 .App-header {
   background-color: #282c34;
@@ -36,3 +60,4 @@
     transform: rotate(360deg);
   }
 }
+
