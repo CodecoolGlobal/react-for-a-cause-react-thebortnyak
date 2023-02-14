@@ -1,7 +1,51 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
 
+section{
+  flex-direction: column;
+  display: flex;
+}
+
+section img{
+  height: 25px;
+}
+
+section div{
+  margin-left:auto;
+  padding-right: 1rem;
+}
+
+nav{
+  display: flex;
+  align-items:center;
+  background-color: #0C455A
+}
+
+nav img{
+  
+  width: 6%
+}
+nav a{
+  text-decoration: none;
+  color: #EFEFEF;
+  padding-right: 1rem;
+  font-size: 2rem
+}
+nav a:hover{
+  text-decoration: underline;
+}
+nav a:nth-child(2){
+
+  margin-left: auto
+
+}
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap');
 *{
   font-family: 'Oswald', sans-serif;

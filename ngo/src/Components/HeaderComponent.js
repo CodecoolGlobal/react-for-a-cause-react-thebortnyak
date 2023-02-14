@@ -1,15 +1,17 @@
-function Header(props) {
+import logo from "../images/logo.png"
+function Header() {
     
   
     let content = 
-      <div className="header">
-        
-        <div className="navbar">
+      <nav>
+          
+        <img src={ logo } alt="IMG NOT FOUND"/>
+
           <a href="/">Home</a>
           <a href="/">About</a>
           <a href="/">Contact</a>
-        </div>
-      </div>;
+        
+      </nav>;
   
     return content;
   }
