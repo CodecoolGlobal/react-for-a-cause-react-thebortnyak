@@ -9,7 +9,7 @@
 /* FONTS */
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap');
-*{
+*, button, input{
   font-family: 'Oswald', sans-serif;
 };
 
@@ -31,6 +31,12 @@ nav{
   background-color: #0C455A
 }
 
+nav ul{
+  display: flex;
+  margin-left: auto;
+  list-style-type: none;
+}
+
 nav img{
   
   width: 6%
@@ -44,28 +50,126 @@ nav a{
 nav a:hover{
   text-decoration: underline;
 }
-nav a:nth-child(2){
 
-  margin-left: auto
-
+@media (max-width:525px){
+  nav ul{
+    flex-direction: column;
+  }
 }
-
 /* ************ */
 /* LANDING PAGE */
 /* ************ */
 
-section{
-  flex-direction: column;
+.landing-page{
   display: flex;
+  flex-direction: column;
+  height: 90vh;
+  background-image: url('./images/landing-page-bckg.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
+
+/* divider */
 
 section img{
   height: 25px;
 }
+.landing-page img:last-child{
+  margin-top: auto;
+}
 
-section div{
+/* text,layout, btn */
+.landing-page div{
   margin-left:auto;
-  padding-right: 1rem;
+  margin-right: 3vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.landing-page h1 {
+  font-size: max(6vw,4rem);
+  text-decoration: underline;
+  color: #475053;
+}
+
+.landing-page p {
+  font-size: max(3vw,3rem);
+  text-align: center;
+  color: #475053;
+}
+.landing-page button {
+  font-size: 2.5vw;
+  width: 20vw;
+  padding: 0.5vw;
+  margin-top: 2vw;
+  
+  
+  
+  color: #FFFFFF;
+  background-color: #0C455A;
+  border: 1px solid #0C455A;
+  border-radius: 10px;
+}
+
+.landing-page button:hover{
+  /* background-color:#0c455aec; */
+  box-shadow: 3px 3px 5px #475053;
+  cursor: pointer;
+}
+
+@media (max-width:850px){
+  .landing-page div{
+    margin-top:50vh;
+    background-color: #0c455ad7;
+    padding: 2rem;
+  }
+
+  .landing-page h1 {
+    font-size: 10vw;
+    color: #FFFFFF;
+  }
+  
+  .landing-page p {
+    font-size: 6vw;
+    text-align: center;
+    color: #fff;
+  }
+  .landing-page button {
+    font-size: 5vw;
+    background-color: #FFFFFF;
+    color: #0C455A;
+    width: 40vw;
+  }
+}
+
+@media  (max-width: 525px) {
+  .landing-page{
+    align-items: center;
+  }
+  .landing-page div{
+    padding: 10vw;
+    margin-left: 0;
+    margin-top:50vh;
+    background-color: #0c455ad7;
+  }
+  .landing-page h1 {
+    font-size: 15vw;
+    color: #FFFFFF;
+  }
+  
+  .landing-page p {
+    font-size: 8vw;
+    text-align: center;
+    color: #fff;
+  }
+  .landing-page button {
+    font-size: 5vw;
+    background-color: #FFFFFF;
+    color: #0C455A;
+    width: 40vw;
+  }
 }
 
 /* ******** */
