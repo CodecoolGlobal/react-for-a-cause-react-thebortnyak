@@ -26,7 +26,6 @@ font-family: 'Quattrocento', serif;
 textarea{
   resize: none;
   display: block;
- 
 }
 
 div.form{
@@ -51,9 +50,6 @@ input{
 }
 
 
-
-
-
 /* ****** */
 /* NAVBAR */
 /* ****** */
@@ -62,23 +58,41 @@ input{
 nav{
   display: flex;
   align-items:center;
-  background-color: #0C455A
+  background-color: #0C455A;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+
+  position: fixed;
+  width: 100vw;
 }
 
 nav ul{
   display: flex;
-  margin-left: auto;
   list-style-type: none;
+  position: absolute;
+  right:5vw;
 }
 
-nav img{
-  
-  width: 6%
+nav img:first-child{
+  width: 100px;
+}
+nav img:last-child{
+  width: 50px;
+  position: absolute;
+  right: -100px;
+}
+nav img:nth-child(3){
+  width: 25px;
+  position: absolute;
+  right:-100px;
+}
+nav img:nth-child(3):hover{
+  cursor: pointer;
 }
 nav a{
   text-decoration: none;
   color: #EFEFEF;
-  padding-right: 1rem;
+  padding-right: 2rem;
   font-size: 2rem
 }
 nav a:hover{
@@ -88,6 +102,36 @@ nav a:hover{
 @media (max-width:525px){
   nav ul{
     flex-direction: column;
+    right: -50vw;
+    top:2vh;
+    padding: 15vw 5vw;
+
+    background-color: #ffffffb0;
+    backdrop-filter: blur(5px);
+  }
+  nav a{
+    color: #0C455A;
+    padding: 0;
+  }
+  nav img:last-child{
+    right: 5vw;
+  }
+  nav img:last-child:hover{
+    cursor: pointer;
+  }
+  nav img:nth-child(3){
+    right:-20vw;
+  }
+
+  /* Move links, buttons */
+  .link-onscreen{
+    right:3vw !important;
+  }
+  .close-on-screen{
+    right: 5vw !important;
+  }
+  .hamburger-offscreen{
+    right:-50vw !important;
   }
 }
 /* ************ */
@@ -98,9 +142,11 @@ nav a:hover{
   display: flex;
   flex-direction: column;
   height: 90vh;
+  padding-top: 10vh;
+
   background-image: url('./images/landing-page-bckg.jpg');
   background-size: cover;
-  background-position: center center;
+  background-position: center 10vh;
   background-repeat: no-repeat;
 }
 
@@ -153,9 +199,9 @@ section img{
   cursor: pointer;
 }
 
-@media (max-width:850px){
+@media (max-width:1000px){
   .landing-page div{
-    margin-top:50vh;
+    margin-top:30vh;
     background-color: #0c455ad7;
     padding: 2rem;
   }
@@ -185,7 +231,7 @@ section img{
   .landing-page div{
     padding: 10vw;
     margin-left: 0;
-    margin-top:50vh;
+    margin-top:35vh;
     background-color: #0c455ad7;
   }
   .landing-page h1 {
