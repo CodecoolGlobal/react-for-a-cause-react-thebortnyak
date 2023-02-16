@@ -30,16 +30,15 @@ function FormComponent() {
             <h1>Contact Us</h1>
             <img src={dividerTop} alt="divider" aria-hidden="true" />
             <form>
-                <label>
-                    <textarea rows={1} cols={30} placeholder="First name" onChange={(e) => setfNameState(e.target.value)} />
-                    <textarea rows={1} cols={30} placeholder="Last name" onChange={(e) => setlNameState(e.target.value)} />
-                    <textarea rows={1} cols={30} placeholder="Email address" onChange={(e) => setEmailState(e.target.value)} />
-                    <textarea rows={1} cols={30} placeholder="Subject" onChange={(e) => setSubjectState(e.target.value)} />
-                    <textarea rows={3} cols={30} placeholder="Message" onChange={(e) => setMessageState(e.target.value)} />
-                </label>
+                <textarea rows={1} cols={30} placeholder="First name" onChange={(e) => setfNameState(e.target.value)} />
+                <textarea rows={1} cols={30} placeholder="Last name" onChange={(e) => setlNameState(e.target.value)} />
+                <textarea rows={1} cols={30} placeholder="Email address" onChange={(e) => setEmailState(e.target.value)} />
+                <textarea rows={1} cols={30} placeholder="Subject" onChange={(e) => setSubjectState(e.target.value)} />
+                <textarea rows={3} cols={30} placeholder="Message" onChange={(e) => setMessageState(e.target.value)} />
                 <input type="submit" value="Submit" onClick={HandleSubmit} />
             </form>
             <img src={dividerBottom} alt="divider" aria-hidden="true" />
+            <div></div>
         </div>
     if (submitted) {
         return content;
