@@ -28,7 +28,7 @@ font-family: 'Quattrocento', serif;
   color:#FFFFFF;
   margin-top:-5px;
   text-align: center;
-  font-size: max(6vw,4rem);
+  font-size: max(5vw,4rem);
 }
 .form img {
   width: 100%;
@@ -276,6 +276,7 @@ section img{
   .landing-page div{
     padding: 10vw;
     margin-left: 0;
+    margin-right: 0;
     margin-top:35vh;
     background-color: #0c455ad7;
   }
