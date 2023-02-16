@@ -4,7 +4,7 @@ import ButtonComponent from './ButtonComponent';
 
 function LandingPage() {
     return (
-      <section className='landing-page'>
+      <section className='landing-page' id="landing">
         <img src={dividerTop} alt="NOT FOUND" width="100%"/>
         <div>
           <h1>MINE ACTION</h1>

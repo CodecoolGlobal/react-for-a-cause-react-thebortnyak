@@ -18,18 +18,18 @@ function Header() {
         !isVisible ? 
         <>
           <ul aria-hidden="true">
-            <li><a href="/">Home</a></li>
-            <li><a href="/">About</a></li>
-            <li><a href="/">Contact</a></li>
+            <li><a href="#landing">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
           <img src={close} alt='close icon' aria-hidden="true"/>
           <img src={hamburger} alt='menu icon' onClick={toggleMenu}/>
         </> :
         <>
           <ul className="link-onscreen">
-            <li><a href="/">Home</a></li>
-            <li><a href="/">About</a></li>
-            <li><a href="/">Contact</a></li>
+            <li><a href="#landing">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
           <img src={close} alt='close icon' onClick={toggleMenu} className="close-on-screen"/>
           <img

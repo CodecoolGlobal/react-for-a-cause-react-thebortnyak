@@ -26,9 +26,10 @@ function FormComponent() {
     }
 
     let content =
-        <div className='form'>
+        <div className='form' id="contact">
             <h1>Contact Us</h1>
             <img src={dividerTop} alt="divider" aria-hidden="true" />
+            {submitted ?
             <form>
                 <textarea rows={1} cols={30} placeholder="First name" onChange={(e) => setfNameState(e.target.value)} />
                 <textarea rows={1} cols={30} placeholder="Last name" onChange={(e) => setlNameState(e.target.value)} />
@@ -36,19 +37,14 @@ function FormComponent() {
                 <textarea rows={1} cols={30} placeholder="Subject" onChange={(e) => setSubjectState(e.target.value)} />
                 <textarea rows={3} cols={30} placeholder="Message" onChange={(e) => setMessageState(e.target.value)} />
                 <input type="submit" value="Submit" onClick={HandleSubmit} />
-            </form>
+            </form> :
+            <p className='thanks'>We appreciate you contacting us. One of our colleagues will get back in touch with you soon! Have a great day!</p>
+            }
             <img src={dividerBottom} alt="divider" aria-hidden="true" />
             <div></div>
         </div>
-    if (submitted) {
+
         return content;
-    }
-    return (
-        <p>We appreciate you contacting us. One of our colleagues will get back in touch with you soon! Have a great day!</p>
-    )
-
-
-
 }
 
 

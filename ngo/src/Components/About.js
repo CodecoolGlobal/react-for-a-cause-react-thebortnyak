@@ -4,8 +4,8 @@ import warn from "../images/warn.jpg"
 import aid from "../images/aid.png"
 
 export default function About() {
-  return (
-    <section className="about-section">
+  return (  
+    <section className="about-section" id='about'>
         <h1>About our mission</h1>
         <img src={dividerTop} alt="section divider" aria-hidden="true" />
             <div className="content">

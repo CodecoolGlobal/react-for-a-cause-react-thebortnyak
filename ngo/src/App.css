@@ -63,32 +63,6 @@ font-family: 'Quattrocento', serif;
   cursor: pointer;
 }
 
-/* textarea{
-  resize: none;
-  display: block;
-}
-
-div.form{
-  display: block;
-  text-align: center;
-}
-form{
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: left;
-}
-input{
-  border-radius: 12px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  width: 11rem;
-  background-color: #0C455A;
-  color: #EFEFEF;
-} */
-
 
 /* ****** */
 /* NAVBAR */
@@ -244,7 +218,9 @@ section img{
   cursor: pointer;
 }
 
+
 @media (max-width:1000px){
+
   .landing-page div{
     margin-top:30vh;
     background-color: #0c455ad7;
@@ -301,9 +277,14 @@ section img{
 /* ******** */
 /*ABOUT PAGE*/
 /************/
+.about-section {
+  scroll-margin-top: 100px;
+}
+
 .content{
   max-width: 1400px;
   margin: auto;
+  scroll-margin-top: 1em;
 }
 .section-1{
   display: flex;
@@ -318,11 +299,13 @@ section img{
 }
 .section-1 span {
   font-size: 20px;
+  color: black;
 }
 .section-1 p{
   max-width: 30vw;
   margin-left: 3vw;
   min-width: 350px;
+  color: #475053;
 }
 
 .section-2{
@@ -334,11 +317,13 @@ section img{
 }
 .section-2 span {
   font-size: 20px;
+  color: black;
 }
 .section-2 p, .section-2 ul{
   max-width: 30vw;
   min-width: 350px;
   list-style-type: none;
+  color: #475053;
 }
 .section-2 img{
   margin-left: 3vw;
@@ -371,3 +356,9 @@ section img{
 /* ************ */
 /* CONTACT PAGE */
 /* ************ */
+
+.thanks {
+  margin: 6rem 0;
+  text-align: center;
+  font-size: 28px;
+}
